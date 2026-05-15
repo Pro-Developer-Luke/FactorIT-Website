@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Example FactorIT blog post — single-post template. Replace meta description per post on import to WordPress.">
+    <title>Article Title | FactorIT Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="index.html" class="brand">
+            <span class="brand-mark">factor</span><span class="brand-dot">.</span>
+        </a>
+        <nav class="primary-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">What We Do</a></li>
+                <li><a href="team.html">Who We Are</a></li>
+                <li><a href="cyber-security.html">IT &amp; Cyber Security</a></li>
+                <li><a href="blog.html" aria-current="page">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <a href="contact.html" class="btn btn-primary btn-sm">Contact Us</a>
+    </div>
+</header>
+
+<!--
+    WP IMPLEMENTATION NOTE:
+    This is single.php in WordPress terms. The .post-article markup is what The Importer (or HTML Import 2) maps to the post body.
+    - <h1 class="post-title"> becomes the_title()
+    - .post-meta values come from the_date(), the_category()
+    - .post-body wraps the_content()
+    - .post-share + .post-related are theme partials, not imported content
+-->
+
+<!-- ============ POST HEADER ============ -->
+<section class="post-hero">
+    <div class="container">
+        <p class="post-breadcrumb"><a href="blog.html">&larr; Back to Blog</a></p>
+        <div class="post-meta">
+            <span class="post-cat">IT Support</span>
+            <time datetime="2024-05-13">13 May 2024</time>
+            <span class="post-read">&middot; 5 min read</span>
+        </div>
+        <h1 class="post-title">Article Title Goes Here &mdash; A Working Example Headline for the Single-Post Template</h1>
+        <p class="post-deck">Optional standfirst paragraph that summarises the article. Replace this per post on WordPress import, or remove if the article doesn't need one.</p>
+    </div>
+</section>
+
+<section class="post-feature">
+    <div class="container">
+        <div class="img-placeholder img-post-feature" role="img" aria-label="Featured image"><span>Featured image</span></div>
+    </div>
+</section>
+
+<!-- ============ POST BODY ============ -->
+<article class="post-article">
+    <div class="container post-layout">
+
+        <div class="post-body">
+            <p>This is the lead paragraph of the article body. When imported into WordPress, everything inside <code>.post-body</code> becomes the post content &mdash; so use standard semantic HTML and the WP importer will convert it to Gutenberg blocks cleanly.</p>
+
+            <h2>A Section Heading</h2>
+            <p>Use <code>h2</code> for major sections and <code>h3</code> for sub-sections. Keep paragraphs short and scannable. WordPress will convert each block-level element to its matching Gutenberg block: paragraphs to Paragraph blocks, headings to Heading blocks, lists to List blocks, blockquotes to Quote blocks, and so on.</p>
+
+            <ul>
+                <li>Bulleted lists translate to the List block.</li>
+                <li>Each item becomes a child list-item.</li>
+                <li>Nesting works too.</li>
+            </ul>
+
+            <h3>Subsection Heading</h3>
+            <p>Inline elements like <strong>bold</strong>, <em>italic</em>, and <a href="#">links</a> import as expected. Code samples in <code>code</code> tags stay inline; longer blocks should use <code>pre &gt; code</code>.</p>
+
+            <blockquote>
+                <p>A pull quote, often used to highlight a key statistic or sentence. Renders as a Quote block in WordPress.</p>
+            </blockquote>
+
+            <h2>Wrapping Up</h2>
+            <p>Close out the article with a takeaway or call-to-action paragraph. The CTA strip below the article is part of the theme, not the post content &mdash; it appears on every blog post.</p>
+        </div>
+
+        <aside class="post-sidebar">
+            <div class="sidebar-card">
+                <h4>Need IT support today?</h4>
+                <p>Our helpdesk is standing by &mdash; reach out and we'll get back to you fast.</p>
+                <a href="contact.html" class="btn btn-primary btn-sm">Contact Us <span aria-hidden="true">&rarr;</span></a>
+            </div>
+
+            <div class="sidebar-card">
+                <h4>Explore More</h4>
+                <ul>
+                    <li><a href="services.html">What We Do</a></li>
+                    <li><a href="cyber-security.html">Cyber Security</a></li>
+                    <li><a href="team.html">Meet the Team</a></li>
+                </ul>
+            </div>
+        </aside>
+
+    </div>
+</article>
+
+<!-- ============ RELATED POSTS ============ -->
+<section class="section post-related">
+    <div class="container">
+        <h2>Related Articles</h2>
+        <ul class="news-grid">
+            <li class="news-card">
+                <a href="blog/fully-managed-voip-hosted-telephony-services.html">
+                    <div class="img-placeholder img-news" role="img" aria-label="Article thumbnail"><span>Article image</span></div>
+                    <h3>Fully Managed VoIP / Hosted Telephony Services</h3>
+                    <p>Why managed VoIP is a communications game-changer for growing businesses.</p>
+                </a>
+            </li>
+            <li class="news-card">
+                <a href="blog/what-is-telephony-in-computer-network.html">
+                    <div class="img-placeholder img-news" role="img" aria-label="Article thumbnail"><span>Article image</span></div>
+                    <h3>What is Telephony in a Computer Network?</h3>
+                    <p>Telephony technology that enables voice communication over data networks, explained.</p>
+                </a>
+            </li>
+            <li class="news-card">
+                <a href="blog/what-is-it-infrastructure-support.html">
+                    <div class="img-placeholder img-news" role="img" aria-label="Article thumbnail"><span>Article image</span></div>
+                    <h3>What is IT Infrastructure Support?</h3>
+                    <p>IT infrastructure as the technological foundation for business operations.</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============ CTA STRIP ============ -->
+<section class="section cta-strip">
+    <div class="container two-col">
+        <div class="col-copy">
+            <h2>Ready to talk &mdash; Let's make your IT one less thing to worry about.</h2>
+            <a href="contact.html" class="btn btn-primary">Get in Touch <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="col-media">
+            <div class="img-placeholder img-cta" role="img" aria-label="Team imagery"><span>Team image</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-brand">
+            <a href="index.html" class="brand"><span class="brand-mark">factor</span><span class="brand-dot">.</span></a>
+            <p>Trusted IT support, managed services and cyber security for growing businesses across Yorkshire, Humberside and Lancashire.</p>
+        </div>
+        <div class="footer-col">
+            <h4>What We Do</h4>
+            <ul>
+                <li><a href="services.html#it-support">IT Support</a></li>
+                <li><a href="services.html#managed-it">Managed IT Services</a></li>
+                <li><a href="services.html#infrastructure">Infrastructure Management</a></li>
+                <li><a href="services.html#web-app">Web &amp; App Development</a></li>
+                <li><a href="services.html#connectivity">Connectivity</a></li>
+                <li><a href="services.html#telephony">Telephony</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="team.html">Who We Are</a></li>
+                <li><a href="cyber-security.html">Cyber Security</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Get in Touch</h4>
+            <ul>
+                <li><a href="mailto:enquiries@factorit.co.uk">enquiries@factorit.co.uk</a></li>
+                <li><a href="tel:01274916237">01274 916237</a></li>
+                <li>Yorkshire / Humberside / Lancashire</li>
+            </ul>
+            <ul class="social">
+                <li><a href="https://www.facebook.com/people/Factor-IT/61553980573350/" aria-label="Facebook">f</a></li>
+                <li><a href="https://www.instagram.com/factoritservices/" aria-label="Instagram">ig</a></li>
+                <li><a href="https://www.linkedin.com/company/factor-it1/" aria-label="LinkedIn">in</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container footer-base">
+        <p>&copy; <span id="current-year">2026</span> FactorIT. All rights reserved.</p>
+        <p>
+            <a href="general-terms-of-business.html">General Terms</a> &middot;
+            <a href="privacy-policy.html">Privacy</a> &middot;
+            <a href="data-protection-policy.html">Data Protection</a> &middot;
+            <a href="anti-slavery.html">Anti-Slavery</a>
+        </p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

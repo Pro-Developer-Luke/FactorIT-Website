@@ -3,48 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact information.">
-    <title>Contact | Site Name</title>
+    <meta name="description" content="Get in touch with FactorIT. Email, phone, and enquiry form for IT support, managed services and cyber security across Yorkshire, Humberside and Lancashire.">
+    <title>Contact Us | FactorIT</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
-            <a href="index.html" class="site-title">Site Name</a>
-            <nav class="site-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="index.html" class="brand">
+            <span class="brand-mark">factor</span><span class="brand-dot">.</span>
+        </a>
+        <nav class="primary-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">What We Do</a></li>
+                <li><a href="team.html">Who We Are</a></li>
+                <li><a href="cyber-security.html">IT &amp; Cyber Security</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+            </ul>
+        </nav>
+        <a href="contact.html" class="btn btn-primary btn-sm">Contact Us</a>
+    </div>
+</header>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero">
+    <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1>Contact Us</h1>
+        <p class="lede">At FactorIT, we're always ready to connect with you. Whether you have questions about our services, need support, or want to discuss how we can assist your business, our team is here for you.</p>
+    </div>
+</section>
+
+<!-- ============ CONTACT GRID ============ -->
+<section class="section contact-section">
+    <div class="container contact-grid">
+
+        <aside class="contact-info">
+            <h2>Get In Touch</h2>
+
+            <div class="contact-block">
+                <h3>Email</h3>
+                <p><a href="mailto:enquiries@factorit.co.uk">enquiries@factorit.co.uk</a></p>
+            </div>
+
+            <div class="contact-block">
+                <h3>Phone</h3>
+                <p><a href="tel:01274916237">01274 916237</a></p>
+            </div>
+
+            <div class="contact-block">
+                <h3>Region</h3>
+                <p>Yorkshire / Humberside / Lancashire</p>
+            </div>
+
+            <div class="contact-block">
+                <h3>Follow Us</h3>
+                <ul class="social social-contact">
+                    <li><a href="https://www.facebook.com/people/Factor-IT/61553980573350/" aria-label="Facebook">f</a></li>
+                    <li><a href="https://www.instagram.com/factoritservices/" aria-label="Instagram">ig</a></li>
+                    <li><a href="https://www.linkedin.com/company/factor-it1/" aria-label="LinkedIn">in</a></li>
                 </ul>
-            </nav>
+            </div>
+        </aside>
+
+        <div class="contact-form-wrap">
+            <!--
+                WP IMPLEMENTATION NOTE:
+                In WordPress, replace the entire <form> below with a Contact Form 7 shortcode block:
+                [contact-form-7 id="XXX" title="Enquiry"]
+                Form spec is documented in CF7 markup at /migration/contact-form-7.txt
+            -->
+            <form class="enquiry-form" action="#" method="post" novalidate>
+                <p class="form-intro">Fill out the form below and a member of our team will be in touch shortly.</p>
+
+                <div class="form-row">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" autocomplete="given-name">
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+                </div>
+
+                <div class="form-row">
+                    <label for="phone">Phone <span class="req" aria-hidden="true">*</span></label>
+                    <input type="tel" id="phone" name="phone" required autocomplete="tel">
+                </div>
+
+                <div class="form-row">
+                    <label for="service">What services are you interested in?</label>
+                    <select id="service" name="service">
+                        <option value="">Please choose&hellip;</option>
+                        <option value="it-support">IT Support</option>
+                        <option value="managed-it">Managed IT Services</option>
+                        <option value="cyber-security">IT &amp; Cyber Security</option>
+                        <option value="infrastructure">Infrastructure Management</option>
+                        <option value="web-app">Web &amp; App Development</option>
+                        <option value="connectivity">Connectivity</option>
+                        <option value="telephony">Telephony</option>
+                        <option value="general">General Enquiry</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Send Enquiry <span aria-hidden="true">&rarr;</span></button>
+
+                <p class="form-disclaimer">By submitting this form, you agree to be added to our mailing list. We assure you that your personal data will not be sold or shared with any third parties. Should you wish to unsubscribe at any time, simply email us with the subject &lsquo;Cancel&rsquo;, and you will be promptly removed from the mailing list.</p>
+            </form>
         </div>
-    </header>
+    </div>
+</section>
 
-    <main class="site-main">
-        <article class="page">
-            <header class="page-header container">
-                <h1 class="page-title">Contact</h1>
-            </header>
-
-            <section class="page-content container">
-                <p>Get in touch using the details below. Once imported into WordPress, replace this with a Contact Form 7 / WPForms / Gravity Forms shortcode.</p>
-
-                <ul class="contact-list">
-                    <li><strong>Email:</strong> <a href="mailto:hello@example.com">hello@example.com</a></li>
-                    <li><strong>Phone:</strong> <a href="tel:+10000000000">+1 (000) 000-0000</a></li>
-                    <li><strong>Address:</strong> 123 Example St, City, Country</li>
-                </ul>
-            </section>
-        </article>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; <span id="current-year">2026</span> Site Name. All rights reserved.</p>
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-brand">
+            <a href="index.html" class="brand"><span class="brand-mark">factor</span><span class="brand-dot">.</span></a>
+            <p>Trusted IT support, managed services and cyber security for growing businesses across Yorkshire, Humberside and Lancashire.</p>
         </div>
-    </footer>
+        <div class="footer-col">
+            <h4>What We Do</h4>
+            <ul>
+                <li><a href="services.html#it-support">IT Support</a></li>
+                <li><a href="services.html#managed-it">Managed IT Services</a></li>
+                <li><a href="services.html#infrastructure">Infrastructure Management</a></li>
+                <li><a href="services.html#web-app">Web &amp; App Development</a></li>
+                <li><a href="services.html#connectivity">Connectivity</a></li>
+                <li><a href="services.html#telephony">Telephony</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="team.html">Who We Are</a></li>
+                <li><a href="cyber-security.html">Cyber Security</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Get in Touch</h4>
+            <ul>
+                <li><a href="mailto:enquiries@factorit.co.uk">enquiries@factorit.co.uk</a></li>
+                <li><a href="tel:01274916237">01274 916237</a></li>
+                <li>Yorkshire / Humberside / Lancashire</li>
+            </ul>
+            <ul class="social">
+                <li><a href="https://www.facebook.com/people/Factor-IT/61553980573350/" aria-label="Facebook">f</a></li>
+                <li><a href="https://www.instagram.com/factoritservices/" aria-label="Instagram">ig</a></li>
+                <li><a href="https://www.linkedin.com/company/factor-it1/" aria-label="LinkedIn">in</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container footer-base">
+        <p>&copy; <span id="current-year">2026</span> FactorIT. All rights reserved.</p>
+        <p>
+            <a href="general-terms-of-business.html">General Terms</a> &middot;
+            <a href="privacy-policy.html">Privacy</a> &middot;
+            <a href="data-protection-policy.html">Data Protection</a> &middot;
+            <a href="anti-slavery.html">Anti-Slavery</a>
+        </p>
+    </div>
+</footer>
 
-    <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
