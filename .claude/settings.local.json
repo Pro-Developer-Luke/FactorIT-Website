@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git -c user.email=luke.wood@enconpharma.com -c user.name=\"Luke Wood\" commit -m \"Initial commit: static site boilerplate for WordPress import\")"
+    ]
+  }
+}
