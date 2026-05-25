@@ -1,19 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Example FactorIT blog post, single-post template. Replace meta description per post on import to WordPress.">
+    <meta name="theme-color" content="#6c6e72">
+
     <title>Article Title | FactorIT Blog</title>
+    <meta name="description" content="Per-post excerpt fills this on WP import. Single-post template for the FactorIT blog.">
+    <link rel="canonical" href="https://factorit.co.uk/blog-post.html">
+
+    <!-- Open Graph (Facebook / LinkedIn) -->
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="FactorIT">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:title" content="Article Title | FactorIT Blog">
+    <meta property="og:description" content="Per-post excerpt fills this on WP import. Single-post template for the FactorIT blog.">
+    <meta property="og:url" content="https://factorit.co.uk/blog-post.html">
+    <meta property="og:image" content="https://factorit.co.uk/assets/mascots/group/team-portrait.png">
+    <meta property="og:image:alt" content="The FactorIT mascots, Pascal, Frozen, Oracle and Nano in the office">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Article Title | FactorIT Blog">
+    <meta name="twitter:description" content="Per-post excerpt fills this on WP import. Single-post template for the FactorIT blog.">
+    <meta name="twitter:image" content="https://factorit.co.uk/assets/mascots/group/team-portrait.png">
+
     <link rel="stylesheet" href="css/style.css">
-</head>
+    <!-- JSON-LD: Article template (per-post fills datePublished / author / headline on WP import) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Article Title Goes Here",
+        "image": "https://factorit.co.uk/assets/mascots/group/team-portrait.png",
+        "publisher": { "@type": "Organization", "name": "FactorIT", "logo": "https://factorit.co.uk/assets/logos/factorit-wordmark.svg" },
+        "author": { "@type": "Organization", "name": "FactorIT" },
+        "datePublished": "2024-05-13"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://factorit.co.uk/" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://factorit.co.uk/blog.html" },
+            { "@type": "ListItem", "position": 3, "name": "Article", "item": "https://factorit.co.uk/blog-post.html" }
+        ]
+    }
+    </script></head>
 <body>
 
 <!-- ============ HEADER / NAV ============ -->
 <header class="site-header">
     <div class="container header-inner">
         <a href="index.html" class="brand">
-            <img src="assets/images/logo-3.svg" alt="FactorIT" class="brand-logo">
+            <img src="assets/logos/factorit-wordmark.svg" alt="FactorIT" class="brand-logo">
         </a>
         <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav-list">
             <span class="nav-toggle-bar"></span>
@@ -180,7 +222,7 @@
 <footer class="site-footer">
     <div class="container footer-grid">
         <div class="footer-brand">
-            <a href="index.html" class="brand"><img src="assets/images/logo-3.svg" alt="FactorIT" class="brand-logo"></a>
+            <a href="index.html" class="brand"><img src="assets/logos/factorit-wordmark.svg" alt="FactorIT" class="brand-logo"></a>
             <p>Trusted IT support, managed services and cyber security for growing businesses across Yorkshire, Humberside and Lancashire.</p>
         </div>
         <div class="footer-col">

@@ -1,0 +1,13 @@
+# robots.txt for FactorIT
+# https://factorit.co.uk
+
+User-agent: *
+Allow: /
+
+# Disallow Claude / dev artefacts
+Disallow: /.claude/
+Disallow: /_dev/
+Disallow: /migration/
+Disallow: /CLAUDE.md
+
+Sitemap: https://factorit.co.uk/sitemap.xml
