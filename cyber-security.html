@@ -13,19 +13,47 @@
 <header class="site-header">
     <div class="container header-inner">
         <a href="index.html" class="brand">
-            <span class="brand-mark">factor</span><span class="brand-dot">.</span>
+            <img src="assets/images/logo-3.svg" alt="FactorIT" class="brand-logo">
         </a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav-list">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+        </button>
         <nav class="primary-nav" aria-label="Primary">
-            <ul>
+            <ul id="primary-nav-list">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">What We Do</a></li>
-                <li><a href="team.html">Who We Are</a></li>
-                <li><a href="cyber-security.html" aria-current="page">IT &amp; Cyber Security</a></li>
+                <li class="has-submenu">
+                    <a href="services.html">What We Do <span class="chev" aria-hidden="true"></span></a>
+                    <ul class="submenu">
+                        <li><a href="services.html#it-support">IT Support</a></li>
+                        <li><a href="services.html#managed-it">Managed IT Services</a></li>
+                        <li><a href="services.html#infrastructure">Infrastructure Management</a></li>
+                        <li><a href="services.html#web-app">Web &amp; App Development</a></li>
+                        <li><a href="services.html#connectivity">Connectivity</a></li>
+                        <li><a href="services.html#telephony">Telephony</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="team.html">Who We Are <span class="chev" aria-hidden="true"></span></a>
+                    <ul class="submenu">
+                        <li><a href="team.html#team">Our Team</a></li>
+                        <li><a href="team.html#sustainability">Sustainability</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="cyber-security.html" aria-current="page">IT &amp; Cyber Security <span class="chev" aria-hidden="true"></span></a>
+                    <ul class="submenu">
+                        <li><a href="cyber-security.html#assessment">Free Assessment</a></li>
+                        <li><a href="cyber-security.html#trial-offers">Trial Offers</a></li>
+                        <li><a href="cyber-security.html#why-block">Why FactorIT</a></li>
+                    </ul>
+                </li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
-        <a href="contact.html" class="btn btn-primary btn-sm">Contact Us</a>
+        <a href="contact.html" class="btn btn-primary btn-sm header-cta">Contact Us</a>
     </div>
 </header>
 
@@ -35,7 +63,7 @@
         <div class="hero-copy">
             <p class="eyebrow eyebrow-light">IT &amp; Cyber Security Solutions</p>
             <h1>Comprehensive IT &amp; Cyber Security Solutions for Your Business</h1>
-            <p class="lede">Does your business have 5 to 30 IT users? Discover our FREE exclusive offers &mdash; IT &amp; Cyber Security Assessment, plus Cove Backup and User Awareness trials. Take advantage of our no-obligation audit.</p>
+            <p class="lede">Does your business have 5 to 30 IT users? Discover our FREE exclusive offers, IT &amp; Cyber Security Assessment, plus Cove Backup and User Awareness trials. Take advantage of our no-obligation audit.</p>
             <a href="contact.html" class="btn btn-primary">Book Your Free Assessment <span aria-hidden="true">&rarr;</span></a>
         </div>
         <div class="hero-media">
@@ -45,7 +73,7 @@
 </section>
 
 <!-- ============ ASSESSMENT FEATURES ============ -->
-<section class="section assessment">
+<section id="assessment" class="section assessment">
     <div class="container">
         <header class="section-head section-head-centered">
             <h2>What's Included in Your Free Assessment?</h2>
@@ -71,14 +99,14 @@
             <li class="feature-card">
                 <span class="feature-num">04</span>
                 <h3>E-mail &amp; Domain Security Review</h3>
-                <p>Ensure your domain's email security adheres to best practices with our comprehensive review &mdash; including SPF record validation, DMARC, DKIM, and a domain web vulnerability scan.</p>
+                <p>Ensure your domain's email security adheres to best practices with our comprehensive review, including SPF record validation, DMARC, DKIM, and a domain web vulnerability scan.</p>
             </li>
         </ol>
     </div>
 </section>
 
 <!-- ============ TRIAL OFFERS ============ -->
-<section class="section trial-offers">
+<section id="trial-offers" class="section trial-offers">
     <div class="container">
         <header class="section-head section-head-centered">
             <h2>Exclusive Trial Offers</h2>
@@ -89,14 +117,14 @@
             <article class="trial-card">
                 <div class="trial-icon" aria-hidden="true"></div>
                 <h3>1 Month User Awareness Training</h3>
-                <p>Transform your staff into a robust first line of defence against cyber threats. Our Human Risk Management (HRM) program includes personalised security awareness training, phishing simulation campaigns, simplified policy management, and ongoing dark-web monitoring &mdash; all managed for you.</p>
+                <p>Transform your staff into a robust first line of defence against cyber threats. Our Human Risk Management (HRM) program includes personalised security awareness training, phishing simulation campaigns, simplified policy management, and ongoing dark-web monitoring, all managed for you.</p>
                 <!-- TODO: replace with WP-hosted media path after upload -->
                 <a href="/wp-content/uploads/factor-it-user-awareness.pdf" class="btn btn-primary btn-sm">Download Datasheet <span aria-hidden="true">&rarr;</span></a>
             </article>
 
             <article class="trial-card">
                 <div class="trial-icon" aria-hidden="true"></div>
-                <h3>Cove Backup &mdash; 1 Month 365 Backup Trial</h3>
+                <h3>Cove Backup,1 Month 365 Backup Trial</h3>
                 <p>Cove Data Protection for Microsoft 365 is designed to help you protect Microsoft 365 users from data loss. Cove for Microsoft 365 helps you retain and restore user mailboxes or single emails, OneDrive data, and SharePoint data. The same web-based dashboard can also be used to protect servers, workstations, and critical business documents.</p>
                 <!-- TODO: replace with WP-hosted media path after upload -->
                 <a href="/wp-content/uploads/factor-it-cove-backup.pdf" class="btn btn-primary btn-sm">Download Datasheet <span aria-hidden="true">&rarr;</span></a>
@@ -106,7 +134,7 @@
 </section>
 
 <!-- ============ WHY CHOOSE FACTOR IT ============ -->
-<section class="section why-block">
+<section id="why-block" class="section why-block">
     <div class="container two-col">
         <div class="col-copy">
             <h2>Why Choose FactorIT?</h2>
@@ -123,7 +151,7 @@
 <section class="section cta-strip">
     <div class="container two-col">
         <div class="col-copy">
-            <h2>Ready to talk &mdash; Let's make your IT one less thing to worry about.</h2>
+            <h2>Ready to talk, Let's make your IT one less thing to worry about.</h2>
             <a href="contact.html" class="btn btn-primary">Book Your Free Assessment <span aria-hidden="true">&rarr;</span></a>
         </div>
         <div class="col-media">
@@ -136,7 +164,7 @@
 <footer class="site-footer">
     <div class="container footer-grid">
         <div class="footer-brand">
-            <a href="index.html" class="brand"><span class="brand-mark">factor</span><span class="brand-dot">.</span></a>
+            <a href="index.html" class="brand"><img src="assets/images/logo-3.svg" alt="FactorIT" class="brand-logo"></a>
             <p>Trusted IT support, managed services and cyber security for growing businesses across Yorkshire, Humberside and Lancashire.</p>
         </div>
         <div class="footer-col">

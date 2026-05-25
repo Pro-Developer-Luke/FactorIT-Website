@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Latest news, guides and insights from FactorIT — IT support, cyber security, telephony and more.">
+    <meta name="description" content="Latest news, guides and insights from FactorIT, IT support, cyber security, telephony and more.">
     <title>Blog | FactorIT</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,19 +13,47 @@
 <header class="site-header">
     <div class="container header-inner">
         <a href="index.html" class="brand">
-            <span class="brand-mark">factor</span><span class="brand-dot">.</span>
+            <img src="assets/images/logo-3.svg" alt="FactorIT" class="brand-logo">
         </a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav-list">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+        </button>
         <nav class="primary-nav" aria-label="Primary">
-            <ul>
+            <ul id="primary-nav-list">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">What We Do</a></li>
-                <li><a href="team.html">Who We Are</a></li>
-                <li><a href="cyber-security.html">IT &amp; Cyber Security</a></li>
+                <li class="has-submenu">
+                    <a href="services.html">What We Do <span class="chev" aria-hidden="true"></span></a>
+                    <ul class="submenu">
+                        <li><a href="services.html#it-support">IT Support</a></li>
+                        <li><a href="services.html#managed-it">Managed IT Services</a></li>
+                        <li><a href="services.html#infrastructure">Infrastructure Management</a></li>
+                        <li><a href="services.html#web-app">Web &amp; App Development</a></li>
+                        <li><a href="services.html#connectivity">Connectivity</a></li>
+                        <li><a href="services.html#telephony">Telephony</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="team.html">Who We Are <span class="chev" aria-hidden="true"></span></a>
+                    <ul class="submenu">
+                        <li><a href="team.html#team">Our Team</a></li>
+                        <li><a href="team.html#sustainability">Sustainability</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="cyber-security.html">IT &amp; Cyber Security <span class="chev" aria-hidden="true"></span></a>
+                    <ul class="submenu">
+                        <li><a href="cyber-security.html#assessment">Free Assessment</a></li>
+                        <li><a href="cyber-security.html#trial-offers">Trial Offers</a></li>
+                        <li><a href="cyber-security.html#why-block">Why FactorIT</a></li>
+                    </ul>
+                </li>
                 <li><a href="blog.html" aria-current="page">Blog</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
-        <a href="contact.html" class="btn btn-primary btn-sm">Contact Us</a>
+        <a href="contact.html" class="btn btn-primary btn-sm header-cta">Contact Us</a>
     </div>
 </header>
 
@@ -55,8 +83,8 @@
                         <span class="post-cat">IT</span>
                         <time datetime="2024-05-13">13 May 2024</time>
                     </div>
-                    <h2>Switching to VoIP in 2024 &mdash; Everything You Need to Know</h2>
-                    <p>VoIP, a method for delivering voice communications over the internet, is transforming how businesses talk &mdash; here's what to consider before you switch.</p>
+                    <h2>Switching to VoIP in 2024,Everything You Need to Know</h2>
+                    <p>VoIP, a method for delivering voice communications over the internet, is transforming how businesses talk, here's what to consider before you switch.</p>
                 </a>
             </li>
 
@@ -92,7 +120,7 @@
                         <time datetime="2024-04-22">22 April 2024</time>
                     </div>
                     <h2>Understanding the Difference Between Full Fibre and FTTP</h2>
-                    <p>Two broadband terms that get used interchangeably &mdash; here's what actually separates them.</p>
+                    <p>Two broadband terms that get used interchangeably, here's what actually separates them.</p>
                 </a>
             </li>
 
@@ -104,7 +132,7 @@
                         <time datetime="2024-04-15">15 April 2024</time>
                     </div>
                     <h2>What is IT Infrastructure Support?</h2>
-                    <p>IT infrastructure is the technological foundation of business operations &mdash; here's how to keep it healthy.</p>
+                    <p>IT infrastructure is the technological foundation of business operations, here's how to keep it healthy.</p>
                 </a>
             </li>
 
@@ -116,7 +144,7 @@
                         <time datetime="2024-04-09">09 April 2024</time>
                     </div>
                     <h2>IT Support Explains: The Difference Between VoIP and UC</h2>
-                    <p>VoIP and Unified Communications get confused for one another &mdash; here's how they differ in practice.</p>
+                    <p>VoIP and Unified Communications get confused for one another, here's how they differ in practice.</p>
                 </a>
             </li>
 
@@ -148,7 +176,7 @@
 <footer class="site-footer">
     <div class="container footer-grid">
         <div class="footer-brand">
-            <a href="index.html" class="brand"><span class="brand-mark">factor</span><span class="brand-dot">.</span></a>
+            <a href="index.html" class="brand"><img src="assets/images/logo-3.svg" alt="FactorIT" class="brand-logo"></a>
             <p>Trusted IT support, managed services and cyber security for growing businesses across Yorkshire, Humberside and Lancashire.</p>
         </div>
         <div class="footer-col">

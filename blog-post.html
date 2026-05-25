@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Example FactorIT blog post — single-post template. Replace meta description per post on import to WordPress.">
+    <meta name="description" content="Example FactorIT blog post, single-post template. Replace meta description per post on import to WordPress.">
     <title>Article Title | FactorIT Blog</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,19 +13,47 @@
 <header class="site-header">
     <div class="container header-inner">
         <a href="index.html" class="brand">
-            <span class="brand-mark">factor</span><span class="brand-dot">.</span>
+            <img src="assets/images/logo-3.svg" alt="FactorIT" class="brand-logo">
         </a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav-list">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+        </button>
         <nav class="primary-nav" aria-label="Primary">
-            <ul>
+            <ul id="primary-nav-list">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">What We Do</a></li>
-                <li><a href="team.html">Who We Are</a></li>
-                <li><a href="cyber-security.html">IT &amp; Cyber Security</a></li>
+                <li class="has-submenu">
+                    <a href="services.html">What We Do <span class="chev" aria-hidden="true"></span></a>
+                    <ul class="submenu">
+                        <li><a href="services.html#it-support">IT Support</a></li>
+                        <li><a href="services.html#managed-it">Managed IT Services</a></li>
+                        <li><a href="services.html#infrastructure">Infrastructure Management</a></li>
+                        <li><a href="services.html#web-app">Web &amp; App Development</a></li>
+                        <li><a href="services.html#connectivity">Connectivity</a></li>
+                        <li><a href="services.html#telephony">Telephony</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="team.html">Who We Are <span class="chev" aria-hidden="true"></span></a>
+                    <ul class="submenu">
+                        <li><a href="team.html#team">Our Team</a></li>
+                        <li><a href="team.html#sustainability">Sustainability</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="cyber-security.html">IT &amp; Cyber Security <span class="chev" aria-hidden="true"></span></a>
+                    <ul class="submenu">
+                        <li><a href="cyber-security.html#assessment">Free Assessment</a></li>
+                        <li><a href="cyber-security.html#trial-offers">Trial Offers</a></li>
+                        <li><a href="cyber-security.html#why-block">Why FactorIT</a></li>
+                    </ul>
+                </li>
                 <li><a href="blog.html" aria-current="page">Blog</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
-        <a href="contact.html" class="btn btn-primary btn-sm">Contact Us</a>
+        <a href="contact.html" class="btn btn-primary btn-sm header-cta">Contact Us</a>
     </div>
 </header>
 
@@ -47,7 +75,7 @@
             <time datetime="2024-05-13">13 May 2024</time>
             <span class="post-read">&middot; 5 min read</span>
         </div>
-        <h1 class="post-title">Article Title Goes Here &mdash; A Working Example Headline for the Single-Post Template</h1>
+        <h1 class="post-title">Article Title Goes Here, A Working Example Headline for the Single-Post Template</h1>
         <p class="post-deck">Optional standfirst paragraph that summarises the article. Replace this per post on WordPress import, or remove if the article doesn't need one.</p>
     </div>
 </section>
@@ -63,7 +91,7 @@
     <div class="container post-layout">
 
         <div class="post-body">
-            <p>This is the lead paragraph of the article body. When imported into WordPress, everything inside <code>.post-body</code> becomes the post content &mdash; so use standard semantic HTML and the WP importer will convert it to Gutenberg blocks cleanly.</p>
+            <p>This is the lead paragraph of the article body. When imported into WordPress, everything inside <code>.post-body</code> becomes the post content, so use standard semantic HTML and the WP importer will convert it to Gutenberg blocks cleanly.</p>
 
             <h2>A Section Heading</h2>
             <p>Use <code>h2</code> for major sections and <code>h3</code> for sub-sections. Keep paragraphs short and scannable. WordPress will convert each block-level element to its matching Gutenberg block: paragraphs to Paragraph blocks, headings to Heading blocks, lists to List blocks, blockquotes to Quote blocks, and so on.</p>
@@ -82,13 +110,13 @@
             </blockquote>
 
             <h2>Wrapping Up</h2>
-            <p>Close out the article with a takeaway or call-to-action paragraph. The CTA strip below the article is part of the theme, not the post content &mdash; it appears on every blog post.</p>
+            <p>Close out the article with a takeaway or call-to-action paragraph. The CTA strip below the article is part of the theme, not the post content, it appears on every blog post.</p>
         </div>
 
         <aside class="post-sidebar">
             <div class="sidebar-card">
                 <h4>Need IT support today?</h4>
-                <p>Our helpdesk is standing by &mdash; reach out and we'll get back to you fast.</p>
+                <p>Our helpdesk is standing by, reach out and we'll get back to you fast.</p>
                 <a href="contact.html" class="btn btn-primary btn-sm">Contact Us <span aria-hidden="true">&rarr;</span></a>
             </div>
 
@@ -139,7 +167,7 @@
 <section class="section cta-strip">
     <div class="container two-col">
         <div class="col-copy">
-            <h2>Ready to talk &mdash; Let's make your IT one less thing to worry about.</h2>
+            <h2>Ready to talk, Let's make your IT one less thing to worry about.</h2>
             <a href="contact.html" class="btn btn-primary">Get in Touch <span aria-hidden="true">&rarr;</span></a>
         </div>
         <div class="col-media">
@@ -152,7 +180,7 @@
 <footer class="site-footer">
     <div class="container footer-grid">
         <div class="footer-brand">
-            <a href="index.html" class="brand"><span class="brand-mark">factor</span><span class="brand-dot">.</span></a>
+            <a href="index.html" class="brand"><img src="assets/images/logo-3.svg" alt="FactorIT" class="brand-logo"></a>
             <p>Trusted IT support, managed services and cyber security for growing businesses across Yorkshire, Humberside and Lancashire.</p>
         </div>
         <div class="footer-col">

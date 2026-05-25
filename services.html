@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="What We Do — IT Support, Managed IT Services, Telephony, Infrastructure Management, Web & App Development and Connectivity from FactorIT.">
+    <meta name="description" content="What We Do, IT Support, Managed IT Services, Telephony, Infrastructure Management, Web & App Development and Connectivity from FactorIT.">
     <title>What We Do | FactorIT</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,19 +13,47 @@
 <header class="site-header">
     <div class="container header-inner">
         <a href="index.html" class="brand">
-            <span class="brand-mark">factor</span><span class="brand-dot">.</span>
+            <img src="assets/images/logo-3.svg" alt="FactorIT" class="brand-logo">
         </a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav-list">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+        </button>
         <nav class="primary-nav" aria-label="Primary">
-            <ul>
+            <ul id="primary-nav-list">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="services.html" aria-current="page">What We Do</a></li>
-                <li><a href="team.html">Who We Are</a></li>
-                <li><a href="cyber-security.html">IT &amp; Cyber Security</a></li>
+                <li class="has-submenu">
+                    <a href="services.html" aria-current="page">What We Do <span class="chev" aria-hidden="true"></span></a>
+                    <ul class="submenu">
+                        <li><a href="services.html#it-support">IT Support</a></li>
+                        <li><a href="services.html#managed-it">Managed IT Services</a></li>
+                        <li><a href="services.html#infrastructure">Infrastructure Management</a></li>
+                        <li><a href="services.html#web-app">Web &amp; App Development</a></li>
+                        <li><a href="services.html#connectivity">Connectivity</a></li>
+                        <li><a href="services.html#telephony">Telephony</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="team.html">Who We Are <span class="chev" aria-hidden="true"></span></a>
+                    <ul class="submenu">
+                        <li><a href="team.html#team">Our Team</a></li>
+                        <li><a href="team.html#sustainability">Sustainability</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="cyber-security.html">IT &amp; Cyber Security <span class="chev" aria-hidden="true"></span></a>
+                    <ul class="submenu">
+                        <li><a href="cyber-security.html#assessment">Free Assessment</a></li>
+                        <li><a href="cyber-security.html#trial-offers">Trial Offers</a></li>
+                        <li><a href="cyber-security.html#why-block">Why FactorIT</a></li>
+                    </ul>
+                </li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
-        <a href="contact.html" class="btn btn-primary btn-sm">Contact Us</a>
+        <a href="contact.html" class="btn btn-primary btn-sm header-cta">Contact Us</a>
     </div>
 </header>
 
@@ -63,11 +91,11 @@
                 <h2>Managed IT Services</h2>
                 <p>FactorIT's Managed IT Services are expertly designed to enable businesses to outsource their IT tasks and services efficiently. Our offerings range from supporting in-house teams to completely handling IT demands, ensuring flexibility and scalability to meet any business requirement.</p>
                 <ul class="sub-offerings">
-                    <li><strong>Microsoft 365</strong> &mdash; cloud-powered productivity platform.</li>
-                    <li><strong>Exclaimer</strong> &mdash; professional email signature management.</li>
-                    <li><strong>Managed AntiVirus</strong> &mdash; central, cloud-based protection.</li>
-                    <li><strong>Email Threat Protection &amp; AntiSpam</strong> &mdash; inbox-level security.</li>
-                    <li><strong>User Awareness Training</strong> &mdash; cyber-security awareness for your team.</li>
+                    <li><strong>Microsoft 365</strong>,cloud-powered productivity platform.</li>
+                    <li><strong>Exclaimer</strong>,professional email signature management.</li>
+                    <li><strong>Managed AntiVirus</strong>,central, cloud-based protection.</li>
+                    <li><strong>Email Threat Protection &amp; AntiSpam</strong>,inbox-level security.</li>
+                    <li><strong>User Awareness Training</strong>,cyber-security awareness for your team.</li>
                 </ul>
                 <a href="cyber-security.html" class="link-arrow">Explore our Cyber Security solutions <span aria-hidden="true">&rarr;</span></a>
             </div>
@@ -142,7 +170,7 @@
 <footer class="site-footer">
     <div class="container footer-grid">
         <div class="footer-brand">
-            <a href="index.html" class="brand"><span class="brand-mark">factor</span><span class="brand-dot">.</span></a>
+            <a href="index.html" class="brand"><img src="assets/images/logo-3.svg" alt="FactorIT" class="brand-logo"></a>
             <p>Trusted IT support, managed services and cyber security for growing businesses across Yorkshire, Humberside and Lancashire.</p>
         </div>
         <div class="footer-col">

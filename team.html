@@ -13,19 +13,47 @@
 <header class="site-header">
     <div class="container header-inner">
         <a href="index.html" class="brand">
-            <span class="brand-mark">factor</span><span class="brand-dot">.</span>
+            <img src="assets/images/logo-3.svg" alt="FactorIT" class="brand-logo">
         </a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav-list">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+        </button>
         <nav class="primary-nav" aria-label="Primary">
-            <ul>
+            <ul id="primary-nav-list">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">What We Do</a></li>
-                <li><a href="team.html" aria-current="page">Who We Are</a></li>
-                <li><a href="cyber-security.html">IT &amp; Cyber Security</a></li>
+                <li class="has-submenu">
+                    <a href="services.html">What We Do <span class="chev" aria-hidden="true"></span></a>
+                    <ul class="submenu">
+                        <li><a href="services.html#it-support">IT Support</a></li>
+                        <li><a href="services.html#managed-it">Managed IT Services</a></li>
+                        <li><a href="services.html#infrastructure">Infrastructure Management</a></li>
+                        <li><a href="services.html#web-app">Web &amp; App Development</a></li>
+                        <li><a href="services.html#connectivity">Connectivity</a></li>
+                        <li><a href="services.html#telephony">Telephony</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="team.html" aria-current="page">Who We Are <span class="chev" aria-hidden="true"></span></a>
+                    <ul class="submenu">
+                        <li><a href="team.html#team">Our Team</a></li>
+                        <li><a href="team.html#sustainability">Sustainability</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="cyber-security.html">IT &amp; Cyber Security <span class="chev" aria-hidden="true"></span></a>
+                    <ul class="submenu">
+                        <li><a href="cyber-security.html#assessment">Free Assessment</a></li>
+                        <li><a href="cyber-security.html#trial-offers">Trial Offers</a></li>
+                        <li><a href="cyber-security.html#why-block">Why FactorIT</a></li>
+                    </ul>
+                </li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
-        <a href="contact.html" class="btn btn-primary btn-sm">Contact Us</a>
+        <a href="contact.html" class="btn btn-primary btn-sm header-cta">Contact Us</a>
     </div>
 </header>
 
@@ -34,12 +62,12 @@
     <div class="container">
         <p class="eyebrow">Who We Are</p>
         <h1>Meet The Team</h1>
-        <p class="lede">The minds behind your IT success &mdash; and the people behind our mascots.</p>
+        <p class="lede">The minds behind your IT success, and the people behind our mascots.</p>
     </div>
 </section>
 
 <!-- ============ TEAM GRID ============ -->
-<section class="section team-section">
+<section id="team" class="section team-section">
     <div class="container">
         <ul class="team-grid">
             <li class="team-card">
@@ -49,7 +77,7 @@
                     <h3>Gavin</h3>
                     <p class="team-role">Director / IT Consultant</p>
                     <!-- TODO: replace placeholder bio with client-supplied copy -->
-                    <p class="team-bio">[Bio placeholder] Gavin leads FactorIT with deep IT consulting experience and a long-standing commitment to environmental responsibility &mdash; embodied in our polar bear mascot, Pascal.</p>
+                    <p class="team-bio">[Bio placeholder] Gavin leads FactorIT with deep IT consulting experience and a long-standing commitment to environmental responsibility, embodied in our polar bear mascot, Pascal.</p>
                 </div>
             </li>
 
@@ -60,7 +88,7 @@
                     <h3>Courtenay</h3>
                     <p class="team-role">Office Manager</p>
                     <!-- TODO: replace placeholder bio with client-supplied copy -->
-                    <p class="team-bio">[Bio placeholder] Courtenay keeps the FactorIT office running smoothly &mdash; supported by our fox mascot Frozen, a reminder of the wildlife our work helps to protect.</p>
+                    <p class="team-bio">[Bio placeholder] Courtenay keeps the FactorIT office running smoothly, supported by our fox mascot Frozen, a reminder of the wildlife our work helps to protect.</p>
                 </div>
             </li>
 
@@ -71,7 +99,7 @@
                     <h3>Dean</h3>
                     <p class="team-role">Senior Engineer / IT Consultant</p>
                     <!-- TODO: replace placeholder bio with client-supplied copy -->
-                    <p class="team-bio">[Bio placeholder] Dean brings senior engineering expertise to every consultation &mdash; partnered with Oracle, our wise owl mascot.</p>
+                    <p class="team-bio">[Bio placeholder] Dean brings senior engineering expertise to every consultation, partnered with Oracle, our wise owl mascot.</p>
                 </div>
             </li>
 
@@ -82,7 +110,7 @@
                     <h3>Mark</h3>
                     <p class="team-role">Helpdesk Manager / Senior Analyst</p>
                     <!-- TODO: replace placeholder bio with client-supplied copy -->
-                    <p class="team-bio">[Bio placeholder] Mark leads the FactorIT helpdesk &mdash; alongside Nano, our marine-life mascot representing the oceans we're working to safeguard.</p>
+                    <p class="team-bio">[Bio placeholder] Mark leads the FactorIT helpdesk, alongside Nano, our marine-life mascot representing the oceans we're working to safeguard.</p>
                 </div>
             </li>
         </ul>
@@ -94,10 +122,10 @@
     <div class="container two-col">
         <div class="col-copy">
             <p class="eyebrow eyebrow-light">Sustainable IT</p>
-            <h2>More than symbolic &mdash; it's a commitment.</h2>
+            <h2>More than symbolic, it's a commitment.</h2>
             <p>At FactorIT, we recognise the profound impact of climate change on our planet and its inhabitants. Our choice to feature the polar bear in our branding is more than symbolic; it's a commitment to awareness and action.</p>
             <p>The climate crisis affects temperature regulation, rising sea levels, food systems, navigational hazards, wildlife habitats and permafrost stability. As a business, we believe in leveraging technology not only for business growth but also for fostering a sustainable future.</p>
-            <p>FactorIT supports organisations like the WWF, and weaves sustainability through everything we do &mdash; from responsibly sourced hardware to extended device lifecycles and minimised e-waste.</p>
+            <p>FactorIT supports organisations like the WWF, and weaves sustainability through everything we do, from responsibly sourced hardware to extended device lifecycles and minimised e-waste.</p>
             <a href="contact.html" class="btn btn-primary">Work With Us <span aria-hidden="true">&rarr;</span></a>
         </div>
         <div class="col-media">
@@ -110,7 +138,7 @@
 <section class="section cta-strip">
     <div class="container two-col">
         <div class="col-copy">
-            <h2>Ready to talk &mdash; Let's make your IT one less thing to worry about.</h2>
+            <h2>Ready to talk, Let's make your IT one less thing to worry about.</h2>
             <a href="contact.html" class="btn btn-primary">Get in Touch <span aria-hidden="true">&rarr;</span></a>
         </div>
         <div class="col-media">
@@ -123,7 +151,7 @@
 <footer class="site-footer">
     <div class="container footer-grid">
         <div class="footer-brand">
-            <a href="index.html" class="brand"><span class="brand-mark">factor</span><span class="brand-dot">.</span></a>
+            <a href="index.html" class="brand"><img src="assets/images/logo-3.svg" alt="FactorIT" class="brand-logo"></a>
             <p>Trusted IT support, managed services and cyber security for growing businesses across Yorkshire, Humberside and Lancashire.</p>
         </div>
         <div class="footer-col">
